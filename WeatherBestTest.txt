@@ -1,0 +1,49 @@
+项目名称：WeatherBestTest   
+项目包：  cn.edu.hbut.weatherbesttest
+
+1. 城市数据获取：  http://guolin.tech/api/china
+   可以得到具体城市的weather_id
+2. 和风天气接口：  http://guolin.tech/api/weather/register
+   已注册用户：79895417@qq.com    My79895417
+   
+和风天气
+https://dev.qweather.com/docs/account/developers/
+已注册用户：79895417@qq.com    My79895417
+   得到的key为：
+    Key名称：WeatherKey
+  Public ID： HE2303042054241418
+    Private key： ffbac23d09da45f1991a797f5ad8ddf2
+
+3. 根据weather_id和key就可以得到天气信息的json包。
+
+http://guolin.tech/api/weather?cityid=CN101200101&key=ffbac23d09da45f1991a797f5ad8ddf2
+
+天气查询返回数据如下：
+{"HeWeather":[
+{"basic":{"cid":"CN101200101","location":"武汉","parent_city":"武汉","admin_area":"湖北","cnty":"中国","lat":"38.04547501","lon":"114.50246429","tz":"+8.00","city":"武汉","id":"CN101200101","update":{"loc":"2023-03-07 01:38","utc":"2023-03-07 01:38"}},"update":{"loc":"2023-03-07 01:38","utc":"2023-03-07 01:38"},"status":"ok",
+
+"now":{"cloud":"91","cond_code":"100","cond_txt":"晴","fl":"10","hum":"30","pcpn":"0.0","pres":"1012","tmp":"14","vis":"16","wind_deg":"184","wind_dir":"南风","wind_sc":"3","wind_spd":"18","cond":{"code":"100","txt":"晴"}},
+
+"daily_forecast":[
+{"date":"2023-03-08","cond":{"txt_d":"晴"},"tmp":{"max":"17","min":"6"}},
+{"date":"2023-03-09","cond":{"txt_d":"晴"},"tmp":{"max":"15","min":"3"}},
+{"date":"2023-03-10","cond":{"txt_d":"晴"},"tmp":{"max":"17","min":"6"}},
+{"date":"2023-03-11","cond":{"txt_d":"多云"},"tmp":{"max":"20","min":"6"}},
+{"date":"2023-03-12","cond":{"txt_d":"晴"},"tmp":{"max":"19","min":"5"}},
+{"date":"2023-03-13","cond":{"txt_d":"晴"},"tmp":{"max":"19","min":"6"}}],
+
+"aqi":{"city":{"aqi":"82","pm25":"37","qlty":"良"}},
+
+"suggestion":{
+"comf":{"type":"comf","brf":"舒适","txt":"白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"},
+"sport":{"type":"sport","brf":"较适宜","txt":"天气较好，但因风力稍强，户外可选择对风力要求不高的运动，推荐您进行室内运动。"},
+"cw":{"type":"cw","brf":"较适宜","txt":"较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"}},
+
+"msg":"所有天气数据均为模拟数据，仅用作学习目的使用，请勿当作真实的天气预报软件来使用。"}]}
+
+
+
+2023.3.8
+https://devapi.qweather.com/v7/weather/now?location=101010100&key=ffbac23d09da45f1991a797f5ad8ddf2
+需要在和风天气上进行开发者认证
+

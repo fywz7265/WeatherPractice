@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Weather"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="cn.edu.hbut.weatherbesttest.db.Province" />
+        <mapping class="cn.edu.hbut.weatherbesttest.db.City" />
+        <mapping class="cn.edu.hbut.weatherbesttest.db.District" />
+    </list>
+</litepal>
